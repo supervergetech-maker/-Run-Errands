@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Local design and verification exports, not part of the published site.
+/motion-preview.gif
+/motion-preview.html
+/service-gallery-preview.png
+/service-photo-map.jpg
+/what-we-handle-mobile.png
+/what-we-handle-motion-restored.png
+/assets/mark-green.png
+/assets/mark-lime.png
+/assets/mark-navy.png
+/assets/mark-white.png

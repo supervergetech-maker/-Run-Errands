@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:'Poppins';font-weight:700;src:url('assets/fonts/poppins-700.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:800;src:url('assets/fonts/poppins-800.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:500;src:url('assets/fonts/poppins-500.woff2') format('woff2')}
+@font-face{font-family:'Poppins';font-weight:600;src:url('assets/fonts/poppins-600.woff2') format('woff2')}
+:root{--lime:#A8DB3C;--green:#0D8E4D}
+*{box-sizing:border-box;margin:0}
+body{width:var(--w);height:var(--h);font-family:'Poppins',sans-serif;overflow:hidden}
+.card{
+  width:var(--w);height:var(--h);position:relative;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(900px 420px at 92% -10%, rgba(168,219,60,.32), transparent 62%),
+    radial-gradient(700px 420px at 0% 110%, rgba(13,142,77,.6), transparent 60%),
+    linear-gradient(155deg,#0B7A44,#0D8E4D 48%,#0A6E3C);
+  padding:var(--pad);display:flex;flex-direction:column;
+}
+.lockup{display:flex;align-items:center;gap:16px}
+.lockup img{width:var(--logo);height:var(--logo);border-radius:26%}
+.lockup b{font-size:var(--brand);font-weight:800;letter-spacing:-.03em}
+.lockup b i{font-style:normal;color:var(--lime)}
+.mid{margin-top:auto;margin-bottom:auto}
+h1{font-size:var(--h1);line-height:1.02;letter-spacing:-.035em;font-weight:800}
+h1 em{font-style:normal;color:var(--lime);display:block}
+.sub{font-size:var(--sub);color:#DCEFE3;margin-top:20px;max-width:82%;line-height:1.5;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips span{
+  font-size:var(--chip);font-weight:600;padding:10px 18px;border-radius:999px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2)
+}
+.foot{display:flex;align-items:center;gap:18px;font-size:var(--foot);font-weight:600}
+.foot .bar{flex:1;height:4px;border-radius:4px;background:rgba(255,255,255,.22)}
+.foot .pill{background:#fff;color:#0C2A17;border-radius:999px;padding:12px 22px;font-weight:700}
+.swoosh{position:absolute;right:-120px;top:-60px;width:var(--sw);opacity:.3;z-index:0}
+.layer{position:relative;z-index:1}
+</style>
+</head>
+<body>
+<div class="card">
+  <svg class="swoosh" viewBox="0 0 400 400" fill="none">
+    <path d="M120 60 h120 a80 80 0 0 1 0 160 h-60 a60 60 0 0 0 0 120 h60" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="96" cy="88" r="20" fill="#A8DB3C"/>
+  </svg>
+  <div class="layer">
+    <div class="lockup"><img src="assets/mark-tile.png" alt=""><b>Run&nbsp;<i>Errands</i></b></div>
+  </div>
+  <div class="mid layer">
+    <h1>Got an<em>Errand?</em></h1>
+    <p class="sub">We'll handle it. Send us your shopping, pickups and everyday tasks — one WhatsApp message is all it takes.</p>
+    <div class="chips">
+      <span>Reliable</span><span>Fast</span><span>Convenient</span>
+    </div>
+  </div>
+  <div class="foot layer">
+    <span>Alaba, Lagos</span><span class="bar"></span>
+    <span class="pill">WhatsApp 0906 807 2310</span>
+  </div>
+</div>
+</body>
+</html>
